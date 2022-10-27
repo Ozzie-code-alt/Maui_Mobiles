@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CCS_StudentProfile.MainPage">
+    <ScrollView>
+        
+<VerticalStackLayout Padding="30" Spacing="30">
+            <Image x:Name="ccslogo" Source="ccslogo.png" HeightRequest="200" />
+            <Label Text="COLLEGE OF COMPUTER STUDIES"
+               FontSize="Large"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"/>
+                <!--ctrl k ctrlc Comment-->
+
+            <!--<Label Text="Student Profile App"
+               FontSize="Medium"
+               HorizontalTextAlignment="Center"/>
+            <Label Text="COLLEGE OF COMPUTER STUDIES"
+               FontSize="Large"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"/>
+
+
+            <Label Text="Student Profile App"
+               FontSize="Medium"
+               HorizontalTextAlignment="Center"/>
+            <Label Text="COLLEGE OF COMPUTER STUDIES"
+               FontSize="Large"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"/>
+
+
+            <Label Text="Student Profile App"
+               FontSize="Medium"
+               HorizontalTextAlignment="Center"/>
+            <Label Text="COLLEGE OF COMPUTER STUDIES"
+               FontSize="Large"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"/>-->
+
+
+            <Label Text="Student Profile App"
+               FontSize="Medium"
+               HorizontalTextAlignment="Center"/>
+            <VerticalStackLayout
+                x:Name="vsLog1"
+                Spacing="0"
+                HeightRequest="0"
+                WidthRequest="0"
+                HorizontalOptions="Center">
+                <Entry  
+                x:Name="Username"
+                WidthRequest="0"
+                HeightRequest="0"
+                HorizontalOptions="Center"
+                Placeholder="Username"/>
+
+                <HorizontalStackLayout
+                    x:Name="hsLog1"
+                    Spacing="15"
+                    HorizontalOptions="Center">
+                    <Entry 
+                x:Name="Password"
+                WidthRequest="0"
+                HeightRequest="0"
+                HorizontalOptions="Center"
+                Placeholder="Password" IsPassword="True" 
+                 />
+                    <ImageButton
+                        x:Name="imbShowPassword"
+                        Source="showpassword.png"
+                        HeightRequest="0"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+            <!--\ Add Encryption to password ctrl k ctrl s to encapsulate
+    -->
+
+            <Button
+                Text="Login"
+                HorizontalOptions="Center"
+                WidthRequest="150" 
+                BackgroundColor="Aquamarine"
+                Clicked= "Button_Clicked"/><!--Width Request is width total-->
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
